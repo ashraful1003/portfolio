@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.background {
+    background: #eeeeee;
+}
+
+.center {
+    text-align: center;
+}
+
+.row {
+    display: inline-block;
+}
+
+#rcorners {
+    border-radius: 100px;
+    background: #ff675f;
+    
+    width: 200px;
+    height: 200px;
+}
+
+.vcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+.textstyle {
+    color: black;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 700px;
+    width: 100%;
+}

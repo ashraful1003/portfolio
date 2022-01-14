@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    background-color: #ddd;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.skill {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.c {
+    width: 97%;
+    background-color: #04AA6D;
+}
+
+.cpp {
+    width: 95%;
+    background-color: #04AA6D;
+}
+
+.java {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+.dart {
+    width: 96%;
+    background-color: #04AA6D;
+}
+
+.android {
+    width: 92%;
+    background-color: #04AA6D;
+}
+
+.flutter {
+    width: 99%;
+    background-color: #04AA6D;
+}
+
+.html {
+    width: 30%;
+    background-color: #04AA6D;
+}
+
+.css {
+    width: 20%;
+    background-color: #04AA6D;
+}
+
+.js {
+    width: 25%;
+    background-color: #04AA6D;
+}
