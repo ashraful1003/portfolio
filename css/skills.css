@@ -5,62 +5,178 @@
     list-style: none;
 }
 
-.container {
-    width: 90%;
-    background-color: #ddd;
-    margin: 0 auto;
-    border-radius: 20px;
+.vcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.skill {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
+.skill-bars {
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.skill-bars .bar {
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+    margin-bottom: 5px;
     color: white;
 }
 
-.c {
-    width: 97%;
-    background-color: #04AA6D;
+.skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
 }
 
-.cpp {
-    width: 95%;
-    background-color: #04AA6D;
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
 }
 
-.java {
+.skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+        0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.c span {
     width: 90%;
-    background-color: #04AA6D;
 }
 
-.dart {
+.bar .progress-line.cpp span {
+    width: 95%;
+}
+
+.bar .progress-line.java span {
+    width: 97%;
+}
+
+.bar .progress-line.dart span {
     width: 96%;
-    background-color: #04AA6D;
 }
 
-.android {
-    width: 92%;
-    background-color: #04AA6D;
+.bar .progress-line.android span {
+    width: 91%;
 }
 
-.flutter {
+.bar .progress-line.flutter span {
     width: 99%;
-    background-color: #04AA6D;
 }
 
-.html {
+.bar .progress-line.html span {
     width: 30%;
-    background-color: #04AA6D;
 }
 
-.css {
-    width: 20%;
-    background-color: #04AA6D;
-}
-
-.js {
+.bar .progress-line.css span {
     width: 25%;
-    background-color: #04AA6D;
+}
+
+.bar .progress-line.js span {
+    width: 20%;
+}
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.c span::after {
+    content: "90%";
+}
+
+.progress-line.cpp span::after {
+    content: "95%";
+}
+
+.progress-line.java span::after {
+    content: "97%";
+}
+
+.progress-line.dart span::after {
+    content: "96%";
+}
+
+.progress-line.android span::after {
+    content: "91%";
+}
+
+.progress-line.flutter span::after {
+    content: "99%";
+}
+
+.progress-line.html span::after {
+    content: "30%";
+}
+
+.progress-line.css span::after {
+    content: "25%";
+}
+
+.progress-line.js span::after {
+    content: "20%";
 }
