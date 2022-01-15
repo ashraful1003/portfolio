@@ -12,7 +12,7 @@
 </head>
 
 <body style="background: #333;">
-    <!-- <script src="/javascript/contact.js"></script> -->
+    <script src="/javascript/contact.js"></script>
     <div class="navbar">
         <ul>
             <li><a href="/html/index.html">Home</a></li>
@@ -34,11 +34,11 @@
     <hr>
 
     <form>
-        <input class="width_small left" type="text" placeholder="Your Name">
-        <input class="width_small left" type="text" placeholder="Your Email">
+        <input id="name" class="width_small left" type="text" placeholder="Your Name">
+        <input id="email" class="width_small left" type="text" placeholder="Your Email">
     </form>
     <form>
-        <select class="width_small left" id="country" name="country">
+        <select class="width_small left" id="division" name="division">
             <option value="--Select Division--">--Select Division--</option>
             <option value="Dhaka">Dhaka</option>
             <option value="Rajshahi">Rajshahi</option>
@@ -56,7 +56,7 @@
             style="height:200px; width: 900px;"></textarea>
     </form>
 
-    <div style="text-align: left; margin-left: 50px;"><input type="submit" value="Submit"></div>
+    <button onclick="myFunction()" style="text-align: left; margin-left: 50px;" class="submit">Submit</button>
 </body>
 
 </html>

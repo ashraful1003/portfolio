@@ -71,7 +71,7 @@ input[type=text], select, textarea {
     /* Firefox */
 }
 
-input[type=submit] {
+.submit {
     max-width: 400px;
     width: 100%;
     background-color: #4CAF50;
@@ -84,6 +84,6 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+submit:hover {
     background-color: #45a049;
 }
