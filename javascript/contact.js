@@ -17,6 +17,8 @@ function myFunction() {
         alert("Enter Something!");
     }
     else {
-        alert("Hello, " + name + "\nwith Email:" + email + "\nFrom: " + division + "\nYour Message:\n" + subject + "\n\nYour Response is SUCCESSFUL! Thank You for Being with ME!");
+        alert("Hello, " + name + "\nwith Email: " + email + "\nFrom: " + division + "\nYour Message:\n" + subject + "\n\nYour Response is SUCCESSFUL! Thank You for Being with ME!");
     }
+
+    //document.getElementById("demo").innerHTML = x; //এই ভ্যালু যদি পেজে দেখাতে চাই তাহলে এই আইডি ধরে কল করতে হবে
 }
